@@ -1,7 +1,7 @@
 # Employee Addresses Form
 
 <p align="center">
-  <img src="employee_address_form_logo.png">
+  <img src="employee_address_form_logo.png" width=100%>
 </p>
 
 <p>This project works as a Employee Address Form<br>
