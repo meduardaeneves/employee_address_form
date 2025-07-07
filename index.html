@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Addresses Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href='css/styles.css'>
+</head>
+<body> 
+    <div id="page-wrapper">
+        <div id="employee-area">
+            <div id="initial-page">
+                <p id="page-title">EMPLOYEE ADDRESS FORM</p>
+                <button id="add-employee">Add Employee</button>
+            </div>
+            <div id="employee-table">
+                <table>
+                    <thead id="table-head">
+                        <tr>
+                            <th class="table-body-id hide" id="table-head-id">id</th>
+                            <th class="table-body-name" id="table-head-name">Name</th>
+                            <th class="table-body-street" id="table-head-street">Street</th>
+                            <th class="table-body-neighborhood" id="table-head-neighborhood">Neighborhood</th>
+                            <th class="table-body-city" id="table-head-city">City</th>
+                            <th class="table-body-state" id="table-head-state">State</th>
+                            <th class="table-body-country" id="table-head-country">Country</th>
+                            <th class="table-body-edit" id="table-head-edit">Edit</th>
+                            <th class="table-body-delete" id="table-head-delete">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    <!-- START TEMPLATE -->
+                        <tr class="table-items hide">
+                            <td class="table-body-id hide">id</td>
+                            <td class="table-body-name">Name</td>
+                            <td class="table-body-street">Street</td>
+                            <td class="table-body-neighborhood">Neighborhood</td>
+                            <td class="table-body-city">City</td>
+                            <td class="table-body-state">State</td>
+                            <td class="table-body-country">Country</td>
+                            <td class="table-body-edit">
+                                <i class="fas fa-edit"></i>
+                            </td>
+                            <td class="table-body-delete">
+                                <i class="fas fa-trash"></i>
+                            </td>
+                        </tr>
+                    <!-- END TEMPLATE -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="hide" id="popup-window">
+            <div  id="popup-title-div">
+                <h3 id="popup-title">Add Employee</h3>
+                <i class="fas fa-close"></i>
+            </div>
+            
+            <div id='popup-placeholder'>
+                <input type="text" placeholder="NAME" id="pop-up-name">
+                <input type="text" placeholder="STREET" id="pop-up-street">
+                <input type="text" placeholder="NEIGHBORHOOD" id="pop-up-neighborhood">
+                <input type="text" placeholder="CITY" id="pop-up-city">    
+                <input type="text" placeholder="STATE" id="pop-up-state">    
+                <input type="text" placeholder="COUNTRY" id="pop-up-country">    
+            </div>
+            <i class="fas fa-check"></i>
+        </div>
+        <p id='repository-link'><a href='https://github.com/meduardaeneves/employee_address_form'>Here</a> to access GitHub repository with raw files</p>
+    </div>
+    
+    <script src='js/scripts.js'></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+:root {
+  /* Espaçamentos */
+  --font-title: 1.5rem;
+  --font-btn: 1rem;
+  --font-table: 1.1rem;
+  --font-table-items: 1rem;
+
+  /* sizes */
+  --size-name: 17.5%;
+  --size-street: 17.5%;
+  --size-neighborhood: 15%;
+  --size-city: 12%;
+  --size-state: 12%;
+  --size-country: 12%;
+  --size-edit: 2rem;
+  --size-delete: 3.3rem;
+}
+
+/* Delete auto margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+/* Organize page wrapper */
+#page-wrapper {
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+}
+
+/* Organize employee area */
+#employee-area {
+    margin-top: 1.5rem;
+    background-color: rgb(200,220,220);
+    padding: 1.5rem;
+    border-radius: .8rem;
+    width: 85%;
+}
+
+
+ /* Organize title area */
+#initial-page {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.0rem;
+    align-items: center;
+    text-align: center;
+}
+#initial-page p{
+    font-size: var(--font-title);
+    font-weight: bold;
+    /* display: flex;
+    align-items: center; */
+}
+
+    /* Organize button */
+#add-employee{
+    background-color: azure;
+    cursor: pointer;
+    padding: .8rem;
+    font-size: var(--font-btn);
+    border: 1px bold #000;
+    border-radius: .8rem;
+}
+#add-employee:hover {
+    background-color: rgb(98, 109, 109);
+    color: white;
+}
+
+/* Organize table */
+#employee-table {
+    background-color: azure;
+    border-radius: .8rem;
+    font-size: var(--font-table);
+    padding: .8rem;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+#employee-table table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;  /* garante que as colunas fiquem proporcionais */
+    
+}
+
+#employee-table th {
+    background-color:rgb(98, 109, 109) ;
+    color: azure;
+    border: 1px solid azure;
+}
+
+#employee-table td {
+    background-color:azure ;
+    border: 1px solid rgb(98, 109, 109);
+    font-size: var(font-table-items) !important;
+}
+
+#employee-table th,#employee-table td {
+    /* width: auto; */
+    white-space: nowrap;  
+    overflow: hidden;
+    text-align: center;
+    padding: .35rem;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+}
+
+/* Larguras fixas em % */
+.table-body-name{
+    width: var(--size-name);
+} 
+
+.table-body-street {
+    width: var(--size-street);
+}
+
+.table-body-neighborhood {
+    width: var(--size-neighborhood);
+}
+
+.table-body-city {
+    width: var(--size-city);
+}
+
+.table-body-state {
+    width: var(--size-state);
+}
+
+.table-body-country {
+    width: var(--size-country);
+}
+
+.table-body-edit {
+  width: var(--size-edit);
+}
+
+.table-body-delete {
+  width: var(--size-delete);
+}
+
+/* PRODUCT recebe o restante: 100% - (10+15+15+15) = 45% */
+.product-table-head {
+  flex: 1;
+}
+
+/* Organize github link position */
+#repository-link {
+    margin-top: 1rem;
+}
+#repository-link a{
+    color: rgb(19, 19, 180);
+    text-decoration: none;
+}
+
+/* POP UP WINDOW */
+
+#popup-window {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(98, 109, 109);
+    padding: 1rem;
+    margin-top: 7rem;
+    /* margin-top: 7.7rem; */
+    border: .5px solid white;
+    border-radius: 1rem;
+    text-align: center;
+    width: 500px
+}
+
+#popup-title-div {
+    display: flex;
+    justify-content: space-between;
+}
+#popup-window h3{
+    color: white;
+}
+
+#popup-placeholder {
+    display: flex;
+    flex-direction: column;
+}
+
+#popup-title {
+    margin-bottom: .7rem;
+}
+
+#popup-placeholder input{
+    margin-bottom:  .7rem;
+    border-radius: .3rem;
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+
+.incorrect-element {
+    color: red;
+    background-color: rgb(228, 163, 163);
+}
+
+
+/* Edit ICONS */
+.fas {
+    color: black;
+    cursor: pointer;
+}
+.fas.fa-edit:hover {
+    color: rgb(79, 63, 221);
+}
+.fas.fa-trash:hover {
+    color: rgb(238, 20, 20);
+}
+.fas.fa-check:hover {
+    background-color: rgb(29, 209, 6);
+    color: white;
+}
+.fas.fa-check {
+    padding: .3rem;
+    background-color: rgb(200,220,220);
+    border-radius: .3rem;
+    text-align: center;
+}
+.fa-close {
+    padding: 0 .3rem;
+    border-radius: .3rem;
+    text-align: center;
+    align-items: center; 
+    font-size: 1.5rem;
+}
+.fa-close:hover {
+    color: red;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* Responsive area */
+@media (max-width: 540px) {
+    :root {
+        --font-title: 1.3rem;
+        --font-btn:1.1rem;
+        
+        /* sizes */
+        --size-name: 10rem;
+        --size-street: 10rem;
+        --size-neighborhood: 8rem;
+        --size-city: 7rem;
+        --size-state: 7rem;
+        --size-country: 7rem;
+        --size-edit: 2rem;
+        --size-delete: 3.3rem;
+    }
+
+    #page-wrapper {
+        width: 100%;  /* 100% da largura da viewport (tela) */
+        /* max-width: 100%; */
+        overflow-x: hidden;
+    }
+
+    #employee-area {
+        margin-top: .3rem;
+    }
+
+    #add-employee{
+        padding: .4rem;
+    }
+
+    #employee-table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* touch; para scroll suave no iOS */
+        /* max-height: 65vh; */
+    }
+    #popup-window {
+    width: 300px;
+    margin-top: 1.5rem;
+    }
+    #popup-placeholder input{
+        font-size: .9rem;
+    }
+}
