@@ -1,7 +1,7 @@
 # Employee Addresses Form
 
 <p align="center">
-  <img src="bank_simulator_logo.png" width="500">
+  <img src="employee_address_form_logo.png" width="500">
 </p>
 
 <p>This project works as a Employee Address Form<br>
