@@ -103,11 +103,15 @@ body {
     background-color:azure ;
     border: 1px solid rgb(98, 109, 109);
     font-size: var(font-table-items) !important;
+    word-wrap: break-word;   /* força quebra de palavras longas */
+    white-space: normal;     /* permite múltiplas linhas */
+    vertical-align: middle; 
+    text-align: center;
 }
 
 #employee-table th,#employee-table td {
     /* width: auto; */
-    white-space: nowrap;  
+    /* white-space: nowrap;   */
     overflow: hidden;
     text-align: center;
     padding: .35rem;
